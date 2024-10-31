@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;700&display=swap");
+@import url("components/avatar.css");
+@import url("components/banner.css");
+@import url("components/button.css");
+@import url("components/card-grid.css");
+
+body {
+    font-family: 'Crimson Pro', serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #3b3a36;
+}
+
+a {
+    text-decoration: none;
+}
+
+.banner {
+    background-image: url('images/vignoble.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 150px 0;
+    text-align: center;
+}
+
+.banner h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+}
+
+.banner h2 {
+    color: white;
+    font-size: 30px;
+    font-weight: lighter;
+    opacity: 0.8;
+    margin: 10px 0;
+}
+
+.btn-blue {
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn-blue:hover {
+    background-color: #0056b3;
+}
+.btn-blue {
+    background-color: #007bff; 
+    color: #ffffff; 
+    padding: 10px 15px; 
+    border: none; 
+    border-radius: 5px; 
+    text-decoration: none; 
+    display: inline-block; 
+    transition: background-color 0.3s ease; 
+}
+
+.btn-blue:hover {
+    background-color: #0056b3; 
+}
+
+.btn-white {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px 20px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-white:hover {
+    background-color: #f0f0f0;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Set 3 cards per row on large screens */
+    gap: 20px; 
+    padding: 20px; 
+}
+
+.card {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px; 
+    text-align: center; 
+}
+
+.card h3 {
+    color: #333; 
+    margin: 0 0 10px; 
+    font-size: 24px; 
+}
+
+.card p {
+    color: #666; 
+    font-size: 16px; 
+    margin: 0 0 20px; 
+}
+
+/* Responsive Styles */
+@media (max-width: 900px) {
+    .card-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 600px) {
+    .card-grid {
+        grid-template-columns: 1fr; /* 1 card per row on small screens */
+    }
+}
+
+
